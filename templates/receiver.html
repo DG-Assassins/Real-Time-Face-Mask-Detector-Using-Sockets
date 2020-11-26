@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}Receiver{% endblock %}
+{% block content %}
+    <div style="text-align: center; margin: 5px auto">
+        <h2 style="margin: 5px auto">Receiver</h2>
+    </div>
+    <div style="text-align: center">
+        <img class ="outputr" id="image_elem" alt="xxx" src="" width="640"/>
+    </div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript" charset="utf-8">
+        const imageElem = document.getElementById("image_elem")
+
+        const options = {
+            transportOptions: {
+                polling: {
+                    extraHeaders: {
+                        'x-access_token': "{{ access_token }}"
+                    }
+                }
+            }
+        };
+
+        const socket = io("/image", options);
+        socket.on("return img", (data) => {
+            imageElem.src = data
+        })
+    </script>
+{% endblock %}

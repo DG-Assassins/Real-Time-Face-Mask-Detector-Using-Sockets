@@ -1,0 +1,31 @@
+html
+{
+    min-height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0 auto;
+    background: url('../static/back.png');
+}
+
+.container
+{
+    margin-top: 10%;
+}
+.logo img
+{
+  width: 85rem;
+  height: 16rem;
+}
+
+.outputr
+{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.changer
+{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
