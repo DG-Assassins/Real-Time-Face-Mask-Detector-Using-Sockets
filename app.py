@@ -62,8 +62,8 @@ def find_objects_yolo(yolo_model , img , colors , class_labels , img_height , im
 
 
 def _detect_mask(img):
-	cfg = 'D:/Custom Yolo Model/mask_yolov4.cfg'
-	weight = 'D:/Custom Yolo Model/mask_yolov4_best.weights'
+	cfg = 'mask_yolov4.cfg'
+	weight = 'mask_yolov4_best.weights'
 	class_labels = ['without_mask' , 'with_mask']
 	colors = [[0 , 0 , 255] , [0 , 255 , 0]]
 	yolo_model = cv2.dnn_DetectionModel(cfg , weight)
