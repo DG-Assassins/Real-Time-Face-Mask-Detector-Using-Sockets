@@ -17,4 +17,15 @@ We developed Face mask detector using the Object detection algorithm and develop
 
 ![Receiver 3](/static/3.png)
 
+## Mask Detector weight file
+Download weights file for mask detector from my google drive link :- [Mask Detector weight file](https://drive.google.com/file/d/14Ipi7mf-om2hQO-ySY3t5W7urQls1gRw/view?usp=sharing)
 
+## Instructions to run code
+1. Clone the repository on your machine
+2. Dowload weights file from link given above and add it to the repository folder.
+3. Change username and password in .env file in repository according to you.
+4. Run command prompt in the repository folder.
+4. Download all the requirements by running command `pip install -r requirements.txt`
+5. Run app.py using command `python app.py`
+6. Open any browser and visit http://127.0.0.1/sender and allow camera access.
+7. Now visit http://127.0.0.1/receiver and check your result.
